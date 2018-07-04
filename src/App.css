@@ -12,24 +12,141 @@
   height: 50px;
   padding: 20px;
   color:black;
+    alignment: center;
 }
 
 .App-body {
-  background-color: lightgreen;
+/ / background-color: lightgreen;
   height: 1000px;
   
   color: white;
 }
 
 .App-title {
-  font-size: 1.5em;
+    font-size: 4em;
 }
 
 .App-intro {
   font-size: large;
 }
 
+/*.shelf-container {
+  width: 85%;
+  float: left; }*/
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+/*.shelf-container*/
+.shelf-item__buy-btn {
+
+    alignment: right;
+    background-color: #1b1a20;
+    color: #fff;
+    padding: 15px 0;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.tab-list {
+    border-bottom: 1px solid #ccc;
+    padding-left: 0;
+}
+
+.tab-list-item {
+    display: inline-block;
+    list-style: none;
+    margin-bottom: -1px;
+    padding: 0.5rem 0.75rem;
+}
+
+.tab-list-active {
+    background-color: white;
+    border: solid #ccc;
+    border-width: 1px 1px 0 1px;
+}
+
+.filters {
+    width: 15%;
+    float: left;
+}
+
+.filters .star-button-container {
+    text-align: center;
+}
+
+.filters .star-button-container small {
+    color: #aaa;
+    margin-bottom: 8px;
+    display: inline-block;
+}
+
+.filters .title {
+    margin-top: 2px;
+    margin-bottom: 20px;
+}
+
+.filters-available-size {
+    display: inline-block;
+    margin-bottom: 10px;
+    /* Customize the label (the container) */
+}
+
+.filters-available-size label {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 35px;
+    height: 35px;
+    font-size: 0.8em;
+    margin-bottom: 8px;
+    margin-right: 8px;
+    border-radius: 50%;
+    line-height: 35px;
+    text-align: center;
+    /* On mouse-over, add a grey background color */
+    /* When the checkbox is checked, add a blue background */
+    /* Show the checkmark when checked */
+    /* Create a custom checkbox */
+}
+
+.filters-available-size label:hover input ~ .checkmark {
+    border: 1px solid #1b1a20;
+}
+
+.filters-available-size label input:checked ~ .checkmark {
+    background-color: #1b1a20;
+    color: #ececec;
+}
+
+.filters-available-size label input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.filters-available-size label input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.filters-available-size label .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 35px;
+    height: 35px;
+    font-size: 0.8em;
+    border-radius: 50%;
+    line-height: 35px;
+    text-align: center;
+    color: #1b1a20;
+    background-color: #ececec;
+    border: 1px solid transparent;
 }
